@@ -71,6 +71,22 @@ export class LoginComponent {
     }
   }
 //  changes for LIZA
+
+//changes to liza 2
+// AddUSer(data:any)
+//     {
+//       console.log(data);
+    
+//       this.servicecall.SignUp(data).subscribe((res)=>
+//       {
+//         console.log(data);
+//         this.snackbar.open('User Saved Successfully', 'saved', {
+//           duration: 10000
+//         });
+        
+//       })
+//       location.reload();
+//     }
   AddUSer(data:any)
     {
       console.log(data);
