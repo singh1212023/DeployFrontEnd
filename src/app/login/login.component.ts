@@ -70,7 +70,7 @@ export class LoginComponent {
        
     }
   }
-
+//  changes for LIZA
   AddUSer(data:any)
     {
       console.log(data);
