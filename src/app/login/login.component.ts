@@ -19,8 +19,7 @@ export class LoginComponent {
     userPassword: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(12)]),
   });
 
-
-  //just to see changes successful commit and push 
+//new changes to push and reflect those changes- in progress
   SignUp=new FormGroup(
     {
       userName:new FormControl('',[Validators.required]),
