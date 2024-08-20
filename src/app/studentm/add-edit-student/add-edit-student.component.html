@@ -1,0 +1,67 @@
+
+ <div matDialogContent class="content">
+    <h2>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>Student Form</b>
+    </h2>
+    <br>
+    <form [formGroup]="Form" (ngSubmit)="SubmitForm(Form .value)">
+       
+            <mat-form-field appearance="outline">
+                <mat-label>Student Name</mat-label>
+                <input matInput name="studentName" formControlName="studentName" placeholder="studentName">
+            </mat-form-field>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <mat-form-field appearance="outline">
+                <mat-label>Student Email</mat-label>
+                <input matInput name="studentEmail" formControlName="studentEmail" placeholder="Email">
+            </mat-form-field>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <mat-form-field appearance="fill" class="example-form-field">
+                <mat-label>Student DOB</mat-label>
+                <input matInput [matDatepicker]="datepicker" formControlName="dob">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                        <button mat-button matDatepickerCancel class="btn">Cancel</button>
+                        <button mat-raised-button color="primary" matDatepickerApply class="btn">Apply</button>
+                    </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input matInput name="studentPhone" formControlName="studentPhone" placeholder="Phone Number">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <input matInput name="city" formControlName="city" placeholder="City">
+            </mat-form-field>
+
+        <div matDialogActions>
+            <button mat-raised-button class="btn btn-shape">Cancel</button>&nbsp;&nbsp;
+            <button mat-raised-button class="btn btn-shape" color="primary" type="submit" >Save</button>
+        </div>
+    </form>
+</div>
+
+ <!-- <p>StudenDynamictForm</p>
+
+ <form [formGroup]="DynamicForm" >
+    <div formArrayName="details">
+        <div *ngFor="let item of details.controls; let i =index;" [formGroupName]="i">
+        <input style="margin-left: 5px;" type="text" fornControlName="id" placeholder="ex.1213">
+        <input style="margin-left: 5px;" type="text" fornControlName="name" placeholder="ex.abcdxyz">
+        <input style="margin-left: 5px;" type="email" fornControlName="email" placeholder="ex.abc@gmail.com">
+        <input style="margin-left: 5px;" type="text" fornControlName="phone" placeholder="1213323">
+
+        <button style="margin-left: 5px;" type="submit" (click)="AddRowItem(i)">Add</button>
+        <button style="margin-left: 5px;" type="submit" (click)="RemoveRowItem(i)">Remove</button>
+
+
+        </div>
+    </div> 
+
+ </form> -->
