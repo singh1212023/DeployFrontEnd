@@ -115,6 +115,7 @@ export class LoginComponent {
         
     //   })
     //   location.reload();
+    //merge conflicts liza
     // }
   
 }
