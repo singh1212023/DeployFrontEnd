@@ -120,4 +120,5 @@ export class LoginComponent {
     //merge conflicts liza
     // }
   
+    // code to pull from any other branches using command
 }
